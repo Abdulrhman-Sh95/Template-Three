@@ -23,28 +23,28 @@
         <a href="#" class="logo">Elzero</a>
         <nav>
           <ul>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#features">Features</a></li>
+            <li><a href="#" data-id="articles">Articles</a></li>
+            <li><a href="#" data-id="gallery">Gallery</a></li>
+            <li><a href="#" data-id="features">Features</a></li>
             <li>
-              <a href="#links">Other links </a>
+              <a href="#" data-id="links">Other links </a>
               <div class="menu">
                 <div class="img-box">
                   <img src="imgs/megamenu.png" alt="img" />
                 </div>
                 <div class="links">
-                  <a href="#testimonials"><i class="far fa-comments"></i> Testimonials</a>
-                  <a href="#team"><i class="far fa-user"></i> Team Member</a>
-                  <a href="#services"><i class="far fa-building"></i> Services</a>
-                  <a href="#skills"><i class="far fa-check-circle"></i> Our Skills</a>
-                  <a href="#work"><i class="far fa-clipboard"></i> How It Work</a>
+                  <a href="#" data-id="testimonials"><i class="far fa-comments"></i> Testimonials</a>
+                  <a href="#" data-id="team"><i class="far fa-user"></i> Team Member</a>
+                  <a href="#" data-id="services"><i class="far fa-building"></i> Services</a>
+                  <a href="#" data-id="skills"><i class="far fa-check-circle"></i> Our Skills</a>
+                  <a href="#" data-id="work"><i class="far fa-clipboard"></i> How It Work</a>
                 </div>
                 <div class="links">
-                  <a href="#event"><i class="far fa-calendar-alt"></i> Event</a>
-                  <a href="#pricing"><i class="fas fa-server"></i> Pricing Plans</a>
-                  <a href="#videos"><i class="far fa-play-circle"></i> Top Videos</a>
-                  <a href="#stats"><i class="far fa-chart-bar"></i> Stats</a>
-                  <a href="#request"
+                  <a href="#" data-id="event"><i class="far fa-calendar-alt"></i> Event</a>
+                  <a href="#" data-id="pricing"><i class="fas fa-server"></i> Pricing Plans</a>
+                  <a href="#" data-id="videos"><i class="far fa-play-circle"></i> Top Videos</a>
+                  <a href="#" data-id="stats"><i class="far fa-chart-bar"></i> Stats</a>
+                  <a href="#" data-id="request"
                     ><i class="fas fa-percent"></i> Request A Discount</a
                   >
                 </div>
@@ -531,15 +531,23 @@
           <div class="img">
             <img src="imgs/skills.png" alt="">
           </div>
-          <div class="box">
+          <div id="box">
             <span class="type">HTML</span>
-            <span class="html"></span>
+            <div class="progress" >
+              <span data-width="80%"></span>
+            </div>
             <span class="type">CSS</span>
-            <span class="css"></span>
+            <div class="progress" >
+              <span data-width="85%"></span>
+            </div>
             <span class="type">javaScript</span>
-            <span class="java"></span>
+            <div class="progress" >
+              <span data-width="70%"></span>
+            </div>
             <span class="type">Python</span>
-            <span class="python"></span>
+            <div class="progress" >
+              <span data-width="80%"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -727,22 +735,22 @@
         <div class="stat-box">
           <div class="box">
             <i class="far fa-user fa-2x fa-fw"></i>
-            <span class="num">150</span>
+            <span class="num" data-num="150">0</span>
             <div class="text">Clients</div>
           </div>
           <div class="box">
             <i class="fas fa-code fa-2x fa-fw"></i>
-            <span class="num">135</span>
+            <span class="num" data-num="135">0</span>
             <div class="text">Projects</div>
           </div>
           <div class="box">
             <i class="fas fa-globe-asia fa-2x fa-fw"></i>
-            <span class="num">50</span>
+            <span class="num" data-num="50">0</span>
             <div class="text">Countries</div>
           </div>
           <div class="box">
             <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
-            <span class="num">500</span>
+            <span class="num" data-num="500">0</span>
             <div class="text">Money</div>
           </div>
         </div>
@@ -840,5 +848,6 @@
     </span>
     </footer>
     <!-- End Footer -->
+    <script src="js/main.js"></script>
   </body>
 </html>

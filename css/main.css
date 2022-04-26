@@ -855,83 +855,37 @@ gap: 30px;
     display: none;
   }
 }
-.skills .progress-box .box {
+.skills .progress-box #box {
   flex: 1;
 }
-.skills .progress-box .box span {
+.skills .progress-box #box span {
   display: block;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.skills .progress-box .box .html, .python {
+.skills .progress-box #box .progress {
   width: 100%;
   height: 30px;
   background-color: #d5d5d5;
   position: relative;
+  margin-bottom: 10px;
 }
-.skills .progress-box .box .html::before, .python::before {
+.skills .progress-box #box .progress span {
   content: "";
-  width: 80%;
+  width: 0%;
   height: 100%;
   background-color: var(--main-color);
   position: absolute;
+  transition: 0.5s;
 }
-.skills .progress-box .box .html::after, .python::after {
+.skills .progress-box #box .progress::after {
   border-radius: 5px;
   content: "80%";
   padding: 5px;
   color: var(--main-color);
   position: absolute;
-  top: -43px;
-  right: 0;
-  border: 1px solid #e0e0e0;
-  font-size: 12px;
-}
-.skills .progress-box .box .java {
-  width: 100%;
-  height: 30px;
-  background-color: #d5d5d5;
-  position: relative;
-}
-.skills .progress-box .box .java::before {
-  content: "";
-  width: 70%;
-  height: 100%;
-  background-color: var(--main-color);
-  position: absolute;
-}
-.skills .progress-box .box .java::after {
-  border-radius: 5px;
-  content: "70%";
-  padding: 5px;
-  color: var(--main-color);
-  position: absolute;
-  top: -43px;
-  right: 0;
-  border: 1px solid #e0e0e0;
-  font-size: 12px;
-}
-.skills .progress-box .box .css {
-  width: 100%;
-  height: 30px;
-  background-color: #d5d5d5;
-  position: relative;
-}
-.skills .progress-box .box .css::before {
-  content: "";
-  width: 85%;
-  height: 100%;
-  background-color: var(--main-color);
-  position: absolute;
-}
-.skills .progress-box .box .css::after {
-  border-radius: 5px;
-  content: "85%";
-  padding: 5px;
-  color: var(--main-color);
-  position: absolute;
-  top: -43px;
+  top: -35px;
   right: 0;
   border: 1px solid #e0e0e0;
   font-size: 12px;
